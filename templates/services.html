@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/services.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="../templates/index.html">Главная</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="events.html">События</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="emergency.html">Экстренная помощь</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="services" class="services-section">
+            <h2>Городские услуги</h2>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Поликлиника №1</h3>
+                    <p>Услуги медицинской помощи для всех возрастных групп. Доступны консультации врачей, анализы и лечение.</p>
+                </div>
+                <div class="service-action">
+                    <button class="contact-button" onclick="window.location.href='tel:+77000000000'">Связаться</button>
+                    <button href="https://pvd.dmed.kz/Authentication/Authentication/SignIn?ReturnUrl=%2F" class="web-button">Сайт заведения</button>
+                    <button class="map-button" onclick="showMap('https://www.google.com/maps?q=поликлиника+№1')">Посмотреть на карте</button>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Спортивный центр "Олимп"</h3>
+                    <p>Фитнес, бассейн, тренажерный зал и различные секции для детей и взрослых.</p>
+                </div>
+                <div class="service-action">
+                    <button class="contact-button" onclick="window.location.href='tel:+77000000001'">Связаться</button>
+                    <button class="map-button" onclick="showMap('https://www.google.com/maps?q=спортивный+центр+Олимп')">Посмотреть на карте</button>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Городские парковки</h3>
+                    <p>Обширная сеть парковочных зон в центре города, включая зоны для электромобилей.</p>
+                </div>
+                <div class="service-action">
+                    <button class="contact-button" onclick="window.location.href='tel:+77000000002'">Связаться</button>
+                    <button class="map-button" onclick="showMap('https://www.google.com/maps?q=городские+парковки')">Посмотреть на карте</button>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Пункт сбора мусора</h3>
+                    <p>Сбор и переработка бытовых отходов. Работает каждый день с 08:00 до 20:00.</p>
+                </div>
+                <div class="service-action">
+                    <button class="contact-button" onclick="window.location.href='tel:+77000000003'">Связаться</button>
+                    <button class="map-button" onclick="showMap('https://www.google.com/maps?q=пункт+сбора+мусора')">Посмотреть на карте</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div id="map-modal">
+        <iframe id="map-iframe" src="" allowfullscreen></iframe>
+        <button onclick="closeMap()" style="position: absolute; top: 20px; right: 20px; padding: 10px 20px; background: #dc3545; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Закрыть карту</button>
+    </div>
+
+    <script src="/templates/services.js"></script>
+    <script src="https://mapgl.2gis.com/api/js/v1"></script>
+</body>
+</html>

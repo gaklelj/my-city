@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детали Шоу - Мой Город</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    header {
+        background: #333;
+        color: #fff;
+        padding: 10px 0;
+    }
+
+    .nav-menu {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-menu li {
+        margin: 0 15px;
+    }
+
+    .nav-menu a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .nav-menu a:hover {
+        text-decoration: underline;
+    }
+
+    .event-details-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+        align-items: flex-start;
+    }
+
+    .event-image {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .event-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .event-info {
+        flex: 2;
+        min-width: 300px;
+    }
+
+    .event-meta {
+        flex: 1;
+        min-width: 250px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .event-meta h3 {
+        margin-top: 0;
+        color: #007bff;
+    }
+
+    .buy-ticket-button {
+        display: inline-block;
+        background-color: #ff6600;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        font-size: 1.2em;
+    }
+
+    .buy-ticket-button:hover {
+        background-color: #e65c00;
+    }
+
+    .age-limit {
+        background-color: #ff6600;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight: bold;
+        display: inline-block;
+    }
+
+    .show-more {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .show-more:hover {
+        text-decoration: underline;
+    }
+
+    #emergency {
+        background: #dc3545;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    #emergency-button {
+        background: #fff;
+        color: #dc3545;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #emergency-button:hover {
+        background: #e6e6e6;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="index.html#events">События</a></li>
+                <li><a href="index.html#services">Услуги</a></li>
+                <li><a href="index.html#reviews">Отзывы</a></li>
+                <li><a href="index.html#emergency">Экстренная помощь</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="event-details">
+            <div class="event-details-container">
+                <div class="event-image">
+                    <img src="Картинки_1/52254u56103_whatsapp-image-2024-10-17-at-16-56-22.webp" alt="Шоу под дождём 'История 15 лет'">
+                </div>
+                <div class="event-info">
+                    <h1>Шоу под дождём 'История 15 лет' в Петропавловске</h1>
+                    <h3>ОПИСАНИЕ</h3>
+                    <p>Санкт-Петербургский театр танца Рустама Надыршина представляет премьеру юбилейного спектакля Шоу под дождём 'История 15 лет'.</p>
+                    <p>В новой постановке, посвящённой юбилею коллектива, представлена яркая, эффектная и красочная ретроспектива на прошедшие 15 лет. Мы собрали самые интересные, волнующие, порой пугающие и интригующие темы, факты и моменты, приправили всё это юмором и подали через призму иронии. Каждый зритель, не зависимо от пола и возраста, ждёт взрыв эмоций, заряд энергии, и самые яркие впечатления. Это больше, чем праздник танца - это спектакль-шоу, в котором интересные мысли и переживания, прожитые за последние 15 лет, обсуждаются актёром в трогательных, глубоких и забавных монологах, и визуализируются танцорами, в оригинальных танцевальных номерах.</p>
+                    <p>Время летит быстро, казалось бы, и 15 лет пролетели, как один миг, но это не так. Ведь каждый день происходит что-то интересное, каждый день наполнен невероятными событиями и явлениями! А в мире за последнее время произошло так много удивительного и интересного.</p>
+                    <a target="_blank" class="buy-ticket-button" href="https://ticketon.kz/petropavlovsk/event/shou-pod-dozhdyem-istoriya-15-let-v-petropavlovske?item_list_name=%D0%9F%D0%BE%D0%BF%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D0%BE%D0%B5&item_list_id=popular&index=2">Купить билет</a>
+                </div>
+                <div class="event-meta">
+                    <h3>МЕСТО ПРОВЕДЕНИЯ</h3>
+                    <p>г. Петропавловск, ул. К Кеншинбаева 22, Северо-Казахстанская областная филармония</p>
+                    <h3>ДАТА</h3>
+                    <p>13 ноября, 2024</p>
+                    <h3>НАЧАЛО</h3>
+                    <p>19:00</p>
+                    <h3>ЖАНР</h3>
+                    <p>спектакль</p>
+                    <h3>ВОЗРАСТНОЕ ОГРАНИЧЕНИЕ</h3>
+                    <div class="age-limit">
+                        <span>12+</span>
+                    </div>
+                    <a href="#" class="show-more">Читать полностью</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <section id="emergency">
+            <h2>Экстренная помощь</h2>
+            <button id="emergency-button">Вызвать экстренные службы</button>
+        </section>
+        <p>&copy; 2024 Мой Город. Все права защищены.</p>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const emergencyButton = document.getElementById('emergency-button');
+            emergencyButton.addEventListener('click', () => {
+                alert('Вызов экстренных служб инициирован!');
+            });
+        });
+    </script>
+</body>
+</html>

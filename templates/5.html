@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детали Концерта - Мой Город</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    header {
+        background: #333;
+        color: #fff;
+        padding: 10px 0;
+    }
+
+    .nav-menu {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-menu li {
+        margin: 0 15px;
+    }
+
+    .nav-menu a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .nav-menu a:hover {
+        text-decoration: underline;
+    }
+
+    .event-details-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+        align-items: flex-start;
+    }
+
+    .event-image {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .event-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .event-info {
+        flex: 2;
+        min-width: 300px;
+    }
+
+    .event-meta {
+        flex: 1;
+        min-width: 250px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .event-meta h3 {
+        margin-top: 0;
+        color: #007bff;
+    }
+
+    .buy-ticket-button {
+        display: inline-block;
+        background-color: #ff6600;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        font-size: 1.2em;
+    }
+
+    .buy-ticket-button:hover {
+        background-color: #e65c00;
+    }
+
+    #emergency {
+        background: #dc3545;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    #emergency-button {
+        background: #fff;
+        color: #dc3545;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #emergency-button:hover {
+        background: #e6e6e6;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="index.html#events">События</a></li>
+                <li><a href="index.html#services">Услуги</a></li>
+                <li><a href="index.html#reviews">Отзывы</a></li>
+                <li><a href="index.html#emergency">Экстренная помощь</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="event-details">
+            <div class="event-details-container">
+                <div class="event-image">
+                    <img src="Картинки_1/51747u57013_700kh500-petropavl.webp" alt="Концерт Nurbolat Abdullin">
+                </div>
+                <div class="event-info">
+                    <h1>Nurbolat Abdullin Петропавл қаласында</h1>
+                    <h3>ОПИСАНИЕ</h3>
+                    <p>Сіздерді Қазақстанның ең танымал орындаушыларының бірі - Нұрболат Абдуллиннің концертiне қуана шақырамыз! Әнші заманауи музыкалық стильдер мен дәстүрлі қазақ әуендерін шебер үйлестіріп, миллиондаған тыңдарманның жүрегін жаулап алды. Оның қуатты дауысы мен керемет орындауы ешбір жанды бей-жай қалдырмас.</p>
+                    <p>Бұл кеште Нұрболат жанкүйерлер арасында сүйікті әндерге айналған ең танымал хиттерін паш етеді. Концерт музыка сүйер қауым үшін ұмытылмас іс-шара болары сөзсіз.</p>
+                    <a target="_blank" class="buy-ticket-button" href="https://ticketon.kz/petropavlovsk/event/nurbolat-abdullin-petropavl?item_list_name=%D0%9F%D0%BE%D0%BF%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D0%BE%D0%B5&item_list_id=popular&index=1">Купить билет</a>
+                </div>
+                <div class="event-meta">
+                    <h3>ӨТЕТІН ОРНЫ</h3>
+                    <p>Петропавл қ., Ақан Сері атындағы Облыстық Филармония (Қаттай Кеншинбаев көшесі, 22)</p>
+                    <h3>КҮНІ</h3>
+                    <p>12 қараша 2024 ж</p>
+                    <h3>БАСТАЛУЫ</h3>
+                    <p>19:00</p>
+                    <h3>ӘРТІСТЕР</h3>
+                    <p>Нұрболат Абдуллин</p>
+                    <h3>ТҰРАҚ</h3>
+                    <p>бар</p>
+                    <h3>ЖАНР</h3>
+                    <p>концерт</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <section id="emergency">
+            <h2>Экстренная помощь</h2>
+            <button id="emergency-button">Вызвать экстренные службы</button>
+        </section>
+        <p>&copy; 2024 Мой Город. Все права защищены.</p>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const emergencyButton = document.getElementById('emergency-button');
+            emergencyButton.addEventListener('click', () => {
+                alert('Вызов экстренных служб инициирован!');
+            });
+        });
+    </script>
+</body>
+</html>
